@@ -49,6 +49,7 @@
         margin-top: 40px;
         filter: drop-shadow(0px 0px 6px rgba(225, 251, 233, 0.3));
         animation: fadeIn 1s ease-in-out;
+        fill: rgba(28, 58, 30, 0.54);
     }
 
     path {
@@ -63,8 +64,28 @@
         /*stroke: rgb(175,117,72);*/
     }
 
-    svg {
-        fill: rgba(28, 58, 30, 0.54);
+    @keyframes draw-wind {
+        from {
+            stroke-dasharray: 3000;
+            stroke-dashoffset: 3000;
+            opacity: 0;
+        }
+        to {
+            stroke-dashoffset: 0;
+            opacity: 1;
+        }
+    }
+
+    .wind {
+        stroke: #94abef;
+        stroke-width: 6;
+        opacity: 1;
+        filter: blur(1px);
+        stroke-dasharray: 300;
+        stroke-dashoffset: 300;
+        animation: draw-wind 2s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: left;
     }
 
     @keyframes draw {
@@ -171,6 +192,9 @@
               stroke="#fff" stroke-width="10" stroke-linecap="round"/>
         <path d="M618 429C620.797 429.398 626.415 431.001 631.243 433.81C636.076 436.622 640.881 439.03 645.709 441.248C651.686 443.994 660.145 448.674 667.402 452.092C673.871 455.138 678.252 458.318 683.08 461.537C687.908 464.756 692.719 467.963 697.547 470.181C702.919 472.649 707.185 476.811 712.013 479.62C716.846 482.432 721.651 484.84 727.48 487.058C732.781 489.076 738.119 491.277 743.556 492.887C749.728 494.714 755.406 496.1 767.238 496.311C774.137 496.434 779.516 492.097 784.345 490.488C789.173 488.878 793.983 487.275 813.82 487.064C822.237 486.975 828.533 490.072 835.971 490.681C842.738 491.235 849.823 493.689 856.67 494.297C862.847 494.846 869.111 497.305 875.76 499.113C881.777 500.75 888.014 502.127 895.042 503.737C902.082 504.948 907.314 505.346 913.499 505.949C918.489 506.154 927.242 506.154 938.67 504.948"
               stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+        <path class="wind" d="M1095 40 Q1110 20 1125 40 Q1140 60 1155 40" stroke-width="6" fill="none"/>
+        <path class="wind" d="M1115 20 Q1130 5 1145 20 Q1160 35 1175 20" stroke-width="6" fill="none"/>
+        <path class="wind" d="M1075 70 Q1090 90 1105 70 Q1120 50 1135 70" stroke-width="6" fill="none"/>
         <path class="cross"
               d="M1042.62 95.4145C1042.62 94.6188 1042.62 85.4568 1042.42 71.5993C1041.82 65.3004 1041.41 45.7709 1041.21 17.4471C1041.01 7.42311 1040.62 6.22964 1039 5"
               stroke="#fff" stroke-width="10" stroke-linecap="round"/>
