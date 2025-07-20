@@ -4,9 +4,6 @@
 }
 
 body {
-    background-size: cover;
-    background: url('hill.svg') no-repeat fixed center;
-    position: relative;
     font-family: 'TrueTypewriterPolyglott', 'Courier New', Courier, monospace;
 }
 
@@ -23,33 +20,26 @@ body {
     transition: opacity 0.3s;
 }
 
-nav {
-    font-family: 'Courier New', Courier, monospace;
-}
-
 h1 {
     font-size: 6rem;
     font-weight: 10;
     color: #693c18;
-    margin: 7rem;
+    margin-top: 7rem;
     text-align: center;
 }
 
 h2 {
     font-size: 2.5rem;
-    color: #574545;
+    color: #693c18;
     margin-top: 5rem;
     margin-bottom: 1rem;
     font-weight: normal;
+    text-align: center;
 }
 
 svg {
     display: block;
-    margin: auto;
-    margin-top: 40px;
-    filter: drop-shadow(0px 0px 6px rgba(225, 251, 233, 0.3));
-    animation: fadeIn 1s ease-in-out;
-    fill: rgba(28, 58, 30, 0.54);
+    margin: 0 auto;
 }
 
 path {
@@ -60,8 +50,7 @@ path {
 }
 
 path.cross {
-    stroke: rgb(128, 51, 33);
-    /*stroke: rgb(175,117,72);*/
+    stroke: #693c18;;
 }
 
 @keyframes draw-wind {
@@ -110,6 +99,7 @@ path.cross {
 }
 
 nav {
+    font-family: "PT Mono", monospace;
     position: fixed;
     top: 0;
     left: 0;
@@ -120,25 +110,27 @@ nav {
     align-items: center;
     justify-content: left;
     z-index: 10;
-    color: rgb(175, 117, 72);
+    color: #693c18;
 }
 
 nav .logo {
     letter-spacing: 0.2rem;
     margin-left: 2rem;
-    font-style: italic;
 }
 
 nav .date {
     margin-left: auto;
     margin-right: 2rem;
     letter-spacing: 0.1rem;
-    font-style: italic;
 }
 
 p {
     font-family: "PT Mono", monospace;
     font-size: 1.2rem;
-    color: rgb(28, 58, 30);
+    color: #693c18;
     line-height: 1.5;
+}
+
+.image-container {
+    text-align: center;
 }
