@@ -3,6 +3,7 @@
     src: url('TruetypewriterPolyglott-mELa.ttf') format('truetype');
 }
 
+
 body {
     font-family: 'TrueTypewriterPolyglott', 'Courier New', Courier, monospace;
 }
@@ -133,4 +134,48 @@ p {
 
 .image-container {
     text-align: center;
+}
+
+.section-text {
+    width: 50rem;
+    margin: 5rem auto auto;
+    padding: 2rem;
+}
+
+.mountain {
+    margin-top: 13rem;
+    margin-bottom: 10rem;
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .section-text {
+        width: 80%;
+        margin-top: 0.1rem;
+
+    }
+
+    nav {
+        height: 4rem;
+        font-size: 0.9rem;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .mountain {
+        width: 100%;
+        margin-top: 7rem;
+        margin-bottom: 10rem;
+    }
 }
