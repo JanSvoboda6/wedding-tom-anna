@@ -8,19 +8,6 @@ body {
     font-family: 'TrueTypewriterPolyglott', 'Courier New', Courier, monospace;
 }
 
-#bg-fade-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #f6f7ec;
-    pointer-events: none;
-    opacity: 0;
-    z-index: 0;
-    transition: opacity 0.3s;
-}
-
 h1 {
     font-size: 6rem;
     font-weight: 10;
@@ -134,18 +121,31 @@ p {
 
 .image-container {
     text-align: center;
+    position: relative;
+    width: 100%;
+    height: 3000px;
+    overflow: visible;
 }
 
 .section-text {
     width: 50rem;
     margin: 5rem auto auto;
     padding: 2rem;
+    z-index: 1;
 }
 
 .mountain {
-    margin-top: 13rem;
-    margin-bottom: 10rem;
-    width: 70%;
+    position: fixed;
+    top: 400px;
+    left: 2vw;
+    width: 96vw;
+    opacity: 1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.vertical-space {
+    height: 65vh;
 }
 
 @media (max-width: 768px) {
