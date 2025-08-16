@@ -135,7 +135,7 @@ p {
 
 .mountain {
     position: fixed;
-    top: 400px;
+    top: 40vh;
     left: 2vw;
     width: 96vw;
     opacity: 1;
