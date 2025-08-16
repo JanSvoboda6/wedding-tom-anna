@@ -11,15 +11,28 @@
 <script>
     window.addEventListener('scroll', function () {
         const img = document.querySelector('.mountain');
-        const minOpacity = 0.2;
-        const maxScroll = 300;
+        const minOpacity = 0.15;
+        const minWidth = 80;
+        const maxWidth = 96;
+        const maxScroll = 500;
         const scrollY = window.scrollY;
         let opacity = 1 - (scrollY / maxScroll);
+        let width = 100 - (scrollY / maxScroll) * 100;
         if (opacity < minOpacity) {
             opacity = minOpacity;
         }
-        img.style.opacity = opacity;
-        img.style.zIndex = 0; // Always background
+
+        if (width < minWidth) {
+            width = minWidth; // Ensure minimum width is 50%
+        }
+
+        if (width > maxWidth) {
+            width = maxWidth; // Ensure maximum width is 96%
+        }
+
+        img.style.opacity = String(opacity);
+        img.style.width = width + 'vw';
+        img.style.left = (100 - width) / 2 + 'vw'; // Adjust left position to keep it centered
     });
 </script>
 <body>
