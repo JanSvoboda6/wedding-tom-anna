@@ -143,6 +143,14 @@ p {
     pointer-events: none;
 }
 
+.section-text li::marker {
+    color: #693c18;
+}
+
+a {
+    color: #1d3e7e;
+}
+
 .vertical-space {
     height: 65vh;
 }
