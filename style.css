@@ -8,6 +8,10 @@ body {
     font-family: 'TrueTypewriterPolyglott', 'Courier New', Courier, monospace;
 }
 
+p {
+    margin-top: 2rem;
+}
+
 h1 {
     font-size: 6rem;
     font-weight: 10;
@@ -20,7 +24,6 @@ h2 {
     font-size: 2.5rem;
     color: #693c18;
     margin-top: 5rem;
-    margin-bottom: 1rem;
     font-weight: normal;
     text-align: center;
 }
@@ -28,8 +31,7 @@ h2 {
 h3 {
     font-size: 1.8rem;
     color: #693c18;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
     font-weight: normal;
     text-align: left;
 }
@@ -137,9 +139,9 @@ p {
 
 .section-text {
     width: 50rem;
-    margin: 5rem auto auto;
-    padding: 2rem;
+    margin: 8rem auto auto;
     z-index: 1;
+    position: relative;
 }
 
 .mountain {
@@ -162,6 +164,10 @@ a {
 
 .vertical-space {
     height: 65vh;
+}
+
+.vertical-space-tiny {
+    height: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -194,4 +200,29 @@ a {
         margin-top: 7rem;
         margin-bottom: 10rem;
     }
+}
+
+
+.image-big {
+    margin-top: 2rem;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-medium {
+    margin-top: 2rem;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-small {
+    margin-top: 2rem;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
