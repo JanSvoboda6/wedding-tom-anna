@@ -163,11 +163,36 @@ a {
 }
 
 .vertical-space {
-    height: 65vh;
+    height: 75vh;
 }
 
 .vertical-space-tiny {
     height: 2rem;
+}
+
+
+.image-big {
+    margin-top: 2rem;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-medium {
+    margin-top: 2rem;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-small {
+    margin-top: 2rem;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -196,33 +221,19 @@ a {
     }
 
     .mountain {
-        width: 100%;
         margin-top: 7rem;
         margin-bottom: 10rem;
     }
-}
 
+    .image-big {
+        width: 90%;
+    }
 
-.image-big {
-    margin-top: 2rem;
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .image-medium {
+        width: 80%;
+    }
 
-.image-medium {
-    margin-top: 2rem;
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image-small {
-    margin-top: 2rem;
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    .image-small {
+        width: 70%;
+    }
 }
