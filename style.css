@@ -21,6 +21,44 @@ figcaption {
 
 }
 
+details {
+  text-align: center;
+}
+
+summary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none; /* remove default marker */
+  cursor: pointer;
+  user-select: none;
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Hide default marker */
+}
+
+/* Add custom marker as pseudo element */
+summary::before {
+  content: '▶'; /* right-pointing triangle */
+  display: inline-block;
+  margin-right: 8px;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+/* Rotate triangle when open */
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+  summary {
+    font-size: 2.5em;
+    font-weight: normal;
+    cursor: pointer;
+    color: #693c18
+  }
+
 h1 {
     font-size: 6rem;
     font-weight: 10;
@@ -30,7 +68,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #693c18;
     margin-top: 5rem;
     font-weight: normal;
