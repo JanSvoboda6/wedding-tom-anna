@@ -12,6 +12,15 @@ p {
     margin-top: 2rem;
 }
 
+figcaption {
+  font-size: 1.5rem;
+    text-align: center;
+    color: #693c18;
+  font-weight: normal; /* Optional */
+  margin-top: 8px; /* Spacing from image */
+
+}
+
 h1 {
     font-size: 6rem;
     font-weight: 10;
