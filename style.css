@@ -39,15 +39,6 @@ summary::-webkit-details-marker {
   display: none; /* Hide default marker */
 }
 
-.custom-marker {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.2s;
-  font-size: 1.2em;             /* Adjust size if needed */
-}
-
 /* Add custom marker as pseudo element */
 summary::before {
   content: '▶'; /* right-pointing triangle */
@@ -62,16 +53,8 @@ details[open] summary::before {
   transform: rotate(90deg);
 }
 
-.details-centered-text {
-  width: 100%;
-  text-align: center;           /* Center text */
-}
 
-details[open] .custom-marker {
-  transform: translateY(-50%) rotate(90deg);
-}
-
-  summary {
+summary {
     font-size: 2.5em;
     font-weight: normal;
     cursor: pointer;
