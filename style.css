@@ -58,7 +58,8 @@ summary {
     font-size: 1.8rem;
     font-weight: normal;
     cursor: pointer;
-    color: #693c18
+    color: #693c18;
+    margin-bottom: 1rem;
   }
 
 
